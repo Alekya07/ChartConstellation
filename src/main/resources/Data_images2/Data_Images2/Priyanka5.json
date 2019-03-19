@@ -1,0 +1,40 @@
+ {
+      "id": 10,
+	  "title": "Number of thefts Vs year for the period 2005-2008", 
+      "data": {
+        "url" : "homicides2.csv"  
+      },
+      "transform": [
+        {"filter": 
+          {"field": "Primary Type", "equal": "THEFT"}
+        }
+      ],
+      "mark": {
+      "type": "line",
+        "interpolate": "monotone"
+      },
+      "encoding": {
+        "x": {
+			"timeUnit": "year",
+           "field": "Year", "type": "temporal",
+		   "axis": {"title": "Year"}
+        },
+        "y": {"aggregate": "count", "field": "*", "type": "quantitative"}
+      },
+	   "color": {
+      "field": "Description",
+      "type": "nominal"
+    },
+      "config": {
+        "axis": {"shortTimeLabels": true}
+      },
+	  "user": "Priyanka",
+  "chartType": "line",
+   "dateTime": {
+     "fullTime": "Sept 10 2018",
+     "year": "2018",
+     "month": "09",
+     "date": "10"
+   },
+  "description": "This dataset reveals that there are maximum number of thefts in 2005, increasing gradually and then decreasing after it reached its peak"
+    }

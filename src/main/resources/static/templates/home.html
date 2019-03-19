@@ -1,0 +1,22 @@
+<div class="grid-y grid-margin-y">
+  <div class="cell large-10 medium-10">
+    <div class="grid-x">
+      <div class="cell large-2" ng-include="'templates/LeftBar.html'"></div>
+
+      <div id="charts" class="cell large-8">
+        <svg id="main" class="svg-custom">
+        </svg>
+      </div>
+
+      <div class="cell large-2" ng-include="'templates/RightBar.html'"></div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="cell large-1 medium-1 suggestion-margin"><button type="button" id="suggestion-button" ng-click="showSuggestions($event)" class="success button float-right">Suggestions</button></div>
+  <div class="cell large-1 medium-1">
+    <div id="slider-range"></div>
+  </div>
+
+</div>

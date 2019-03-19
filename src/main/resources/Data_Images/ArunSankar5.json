@@ -1,0 +1,46 @@
+{
+  "id": 5,
+  "user": "ArunSankar",
+  "chartType": "bar",
+  "title": "Top countries scorring highest number of medals",
+  "description": "Top countries with total medals in summer olympic games. USA has bagged a lot of medals in Swimming and Athletics.",
+  "data": {
+    "url": "../dataset/original/Country-Medal.json"
+  },
+  "encoding": {
+    "y": {
+      "field": "Teams",
+      "type": "ordinal"
+    },
+    "x": {
+      "field": "Total",
+      "type": "quantitative"
+    },
+    "color": {
+      "value": "#a2fbb9"
+    }
+  },
+  "layer": [{
+    "mark": "bar"
+  }, {
+    "mark": {
+      "type": "text",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 3
+    },
+    "encoding": {
+      "text": {
+        "field": "Total",
+        "type": "quantitative"
+      }
+    }
+  }
+  ],
+  "dateTime": {
+    "fullTime": "July 20 2018",
+    "year": "2018",
+    "month": "07",
+    "date": "20"
+  }
+}

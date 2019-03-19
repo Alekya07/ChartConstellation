@@ -1,0 +1,74 @@
+<!doctype html>
+<html class="no-js" dir="ltr" ng-app="mainApp">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Charts Constellation</title>
+
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/css/alertify.min.css" />
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/css/themes/default.min.css" />
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/css/themes/semantic.min.css" />
+		<link rel="stylesheet" href="lib/foundation/css/foundation.css">
+		<link rel="stylesheet" href="css/home.css">
+		<link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="lib/css/jquery-ui.min.css">
+		<!-- Angular Material style sheet -->
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.css">
+
+
+
+		<!-- JavaScript -->
+		<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/alertify.min.js"></script>
+		<script type="text/javascript" src="lib/js/bubbleset.js"></script>
+		<script src="lib/js/jquery-3.3.1.js"></script>
+		<script src="lib/js/jquery-ui.js"></script>
+		<script src="lib/js/popper.min.js"></script>
+		<script src="lib/js/angular.min.js"></script>
+		<script src="lib/js/lodash.js"></script>
+		<script src="lib/js/palette.js"></script>
+		<script src="lib/js/angular-route.min.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/service/coordinate.service.js"></script>
+		<script src="js/service/distance.service.js"></script>
+		<script src="js/service/user.service.js"></script>
+		<script src="js/service/chart.service.js"></script>
+		<script src="js/service/util.service.js"></script>
+		<script src="js/service/dataShare.service.js"></script>
+		<script src="js/ImageViewController.js"></script>
+		<script src="js/HomeController.js"></script>
+		<script src="js/SuggestionsController.js"></script>
+		<script src="js/IndexController.js"></script>
+
+
+	</head>
+
+	<body ng-controller="IndexController" ng-init="start()">
+		<ul class="menu">
+			<li><a ng-click="goToHome()">Home</a></li>
+			<li><a href="#!images">Show Images</a></li>
+			<li><a ng-click="switchDataset()" href="">Switch Dataset</a></li>
+		</ul>
+
+
+		<div ng-view>
+
+		</div>
+		<!-- Angular Material requires Angular.js Libraries -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-aria.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-messages.min.js"></script>
+
+		<!-- Angular Material Library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.js"></script>
+		<!-- <script src="lib/foundation/js/vendor/jquery.js"></script> -->
+		<script src="lib/foundation/js/vendor/what-input.js"></script>
+		<script src="lib/foundation/js/vendor/foundation.min.js"></script>
+		<script src="lib/foundation/js/app.js"></script>
+
+	</body>
+
+</html>
